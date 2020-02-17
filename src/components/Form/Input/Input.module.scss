@@ -1,0 +1,21 @@
+.container{
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #303030;
+  input{
+    display: block;
+    padding: 20px 12px;
+    background: #F9FAFB;
+    border: 1px solid #DEDEE0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: rgba(102, 102, 102, 0.466455);
+  }
+}
