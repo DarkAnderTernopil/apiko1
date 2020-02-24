@@ -1,0 +1,95 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 17px 13px 17px;
+}
+.headerRight{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.name{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+  margin-right: 65px;
+
+  color: #131314;
+}
+.product{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.productImage{
+  width: 41px;
+  height: 41px;
+  margin-right: 9px;
+}
+.productData{
+  margin-right: 30px;
+}
+.productTitle{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 207% */
+
+
+  color: #000000;
+}
+.back{
+  display: none;
+}
+.productPrice{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 207% */
+
+
+  color: #000000;
+}
+.productLink{
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: end;
+}
+.points{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 992px) {
+  .back{
+    display: block;
+    margin-right: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .header{
+    flex-wrap: wrap;
+  }
+  .name{
+    margin-right: 0;
+  }
+
+  .product{
+    order: 1;
+    flex-basis: 100%;
+    padding-top: 8px;
+    border-top: 1px solid #E7E9ED;
+    margin-top: 8px;
+    margin-left: 31px;
+  }
+
+
+}

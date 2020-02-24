@@ -1,0 +1,56 @@
+.container{
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  box-sizing: border-box;
+  box-shadow: 0 4px 14px rgba(121, 121, 121, 0.0527344);
+  border-radius: 4px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 20px;
+  padding: 3px;
+  position: relative;
+}
+.image{
+  border-radius: 4px 4px 0 0;
+  width: 202px;
+  height: 148px;
+}
+.imageContainer{
+  border-radius: 4px 4px 0 0;
+  width: 202px;
+  height: 148px;
+  margin-bottom: 6px;
+}
+.name{
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  margin-left: 9px;
+  margin-bottom: 7px;
+
+  color: #373738;
+}
+.price{
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  margin-left: 9px;
+  margin-bottom: 7px;
+  /* identical to box height */
+
+
+  color: #101010;
+}
+.like{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.163407);
+  top: 133px;
+  right: 7px;
+}

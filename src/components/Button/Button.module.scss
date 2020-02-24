@@ -1,0 +1,26 @@
+.button{
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 131px;
+  height: 31px;
+  box-sizing: border-box;
+
+}
+.buttonFilled{
+  background: #349A89;
+  color: #FFFFFF;
+  border: none;
+}
+.buttonEmpty{
+  background: none;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  border: 1px solid #349A89;
+  color: #535353;
+}

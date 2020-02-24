@@ -1,0 +1,90 @@
+.container{
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: absolute;
+  top: 41px;
+  left: 37px;
+  z-index: 1;
+
+  a{
+    text-decoration: none;
+  }
+}
+.top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 9px 16px;
+}
+.name{
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  margin-bottom: 5px;
+  line-height: 12px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 1px;
+
+  color: #000000;
+}
+.email{
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 5px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 1px;
+
+  color: #979797;
+}
+.profile{
+  line-height: 12px;
+  a{
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    margin-bottom: 5px;
+    line-height: 12px;
+    /* or 200% */
+
+    letter-spacing: 1px;
+
+    color: #349A89;
+  }
+
+}
+.link{
+  padding: 15px 16px;
+  border-bottom: 1px solid #E4E4E4;
+  a{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #349A89;
+  }
+
+}
+.link2{
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #349A89;
+  padding: 15px 16px;
+  border-bottom: 1px solid #E4E4E4;
+}

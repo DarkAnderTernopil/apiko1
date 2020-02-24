@@ -1,0 +1,53 @@
+.tab{
+  border: 1.3px solid #EEEFF1;
+  box-sizing: border-box;
+  width: 163.67px;
+  height: 74.11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.tabText{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #9099A7;
+}
+.number{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22.1px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 1.3px;
+  color: #3CB255;
+}
+.tabActive{
+  background: #349A89;
+  border: 1.3px solid #EEEFF1;
+  box-sizing: border-box;
+  position: relative;
+  .number{
+    color: #FFFFFF!important;
+    font-weight: 500;
+  }
+  .tabText{
+    color: #FFFFFF;
+    font-weight: normal;
+  }
+  .triangle{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #349A89;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

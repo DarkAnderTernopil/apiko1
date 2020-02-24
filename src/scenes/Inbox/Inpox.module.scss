@@ -1,0 +1,25 @@
+.chats{
+  width: 541px;
+  background: #FFFFFF;
+  border: 1px solid #E7E9ED;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-top: 21px;
+  padding-left: 14px;
+
+
+}
+.containerMobileNone{}
+.container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.messageList{
+  flex-grow: 1;
+}
+@media (max-width: 992px) {
+  .containerMobileNone{
+    display: none;
+  }
+}

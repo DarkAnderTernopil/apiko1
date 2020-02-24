@@ -46,4 +46,51 @@ export const Products = {
   getById(id) {
     return axios.get(`/api/products/${id}`);
   },
+  byUserId(userId) {
+    return axios.get(`/api/users/${userId}/products`);
+  },
+  addProductToSaved(id) {
+    return axios.post(`/api/products/${id}/saved`);
+  },
+  removeProductFromSaved(id) {
+    return axios.delete(`/api/products/${id}/saved`);
+  },
+  getSavedProducts() {
+    return axios.get(`/api/products/saved`);
+  },
+  createNewProduct(data) {
+    return axios.post(`/api/products`, data);
+  },
+};
+export const Users = {
+  getUserProducts(userId) {
+    return axios.get(`/api/users/${userId}/products`);
+  },
+  getUserById(userId) {
+    return axios.get(`/api/users/${userId}`);
+  },
+};
+export const Chats = {
+  createChat(id, message) {
+    return axios.post(`/api/products/${id}/createChat`, { message });
+  },
+  getList() {
+    return axios.get('/api/chats');
+  },
+  sendMessage(id, message) {
+    return axios.post(`/api/chats/${id}/messages`, { message });
+  },
+  getChatMessages(id) {
+    return axios.get(`/api/chats/${id}/messages`);
+  },
+};
+export const Image = {
+  async upload(image) {
+    const bodyForm = new FormData();
+    console.log({ image });
+    bodyForm.append('image', image);
+
+    const res = await axios.post('/api/upload/images', bodyForm);
+    return res.data;
+  },
 };

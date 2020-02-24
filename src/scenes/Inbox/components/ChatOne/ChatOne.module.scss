@@ -1,0 +1,110 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+  //height: 107px;
+  padding: 31px 20px 29px 26px;
+  box-sizing: border-box;
+}
+.firsBlock{
+  flex-grow: 1;
+}
+.containerActive{
+  border-left: 4px solid #349A89;
+}
+.userName{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  /* identical to box height, or 147% */
+}
+.lastMessage{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 152.1%;
+  /* identical to box height, or 23px */
+
+
+  color: rgba(43, 43, 43, 0.499918);
+}
+.productInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 145px;
+}
+.img{
+  width: 47px;
+  height: 47px;
+  margin-right: 8px;
+}
+.productName{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 207% */
+
+
+  color: #000000;
+}
+.productPrice{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 207% */
+
+
+  color: #000000;
+}
+.line{
+  width: 2px;
+  height: 36px;
+  background: #E7E9ED;
+  margin-right: 10px;
+}
+.time{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 152.1%;
+  /* identical to box height, or 23px */
+
+  text-align: right;
+
+  color: rgba(43, 43, 43, 0.499918);
+
+}
+.last{
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  margin-left: 35px;
+}
+@media (max-width: 500px) {
+  .container{
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .line{
+    display: none;
+  }
+  .productInfo{
+    margin-top: 24px;
+    flex-basis: 100%;
+    order: 1;
+    justify-content: flex-start;
+  }
+}

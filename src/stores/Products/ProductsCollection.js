@@ -2,18 +2,21 @@ import { ProductModel } from './ProductModel';
 import { asyncModel, createCollection } from '../utils';
 import * as Api from '../../api/Api';
 import { useStore } from '../createStore';
+import { Product } from '../schemas';
+// import { values } from 'mobx';
 
 export const ProductsCollection = createCollection(ProductModel, {
   getProduct: asyncModel(getProduct),
+
   // productById: suspenseModel(productById),
 });
 function getProduct(id) {
-  return async function getProductFlow(flow, store, Root) {
+  return async function getProductFlow(flow) {
     const res = await Api.Products.getById(id);
-    Root.entities.users.add(res.data.owner.id, res.data.owner);
-    store.add(res.data.id, { ...res.data, owner: res.data.owner.id });
+    flow.merge(res.data, Product);
   };
 }
+
 // function productById(id) {
 //   return (flow, store) => {
 //     if (store.get(id)) {

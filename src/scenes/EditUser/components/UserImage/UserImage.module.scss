@@ -1,0 +1,36 @@
+.container{
+  margin: auto;
+  position: relative;
+  margin-bottom: 15px;
+}
+.img{
+  border-radius: 50%;
+  width: 102px;
+  height: 102px;
+}
+.upload{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  width: 104px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+
+  color: #349A89;
+  background: #FFFFFF;
+  border: 1px solid #349A89;
+  box-sizing: border-box;
+  border-radius: 5px;
+}

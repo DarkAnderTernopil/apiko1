@@ -1,13 +1,23 @@
 import React from 'react';
 import { useFormikContext } from 'formik';
-import s from './Submit.module.scss';
+import Button from '../../Button/Button';
 
-const Submit = ({ text }) => {
+const Submit = ({ text, style = {}, ...props }) => {
   const form = useFormikContext();
   return (
-    <button type="submit" onClick={form.handleSubmit} className={s.submit}>
-      {text}
-    </button>
+    <Button
+      type="submit"
+      style={{
+        width: '100%',
+        height: 58,
+        marginTop: 32,
+        textTransform: 'none',
+        ...style,
+      }}
+      {...props}
+      onClick={form.handleSubmit}
+      title={text}
+    />
   );
 };
 

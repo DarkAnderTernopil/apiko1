@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  a{
+    text-decoration: none;
+  }
+}
+.transparentButton{
+  background: none;
+  border: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 40px;
+  /* identical to box height, or 333% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+@media (max-width: 540px) {
+  .container{
+    display: none;
+
+  }
+
+}

@@ -1,0 +1,81 @@
+.container{
+  position: relative;
+}
+.exit{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.title{
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #282828;
+  margin-bottom: 29px;
+}
+.product{
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 16px;
+
+  /* identical to box height */
+
+
+  color: #373738;
+}
+.userBlock{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.userName{
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  /* identical to box height */
+
+
+  color: #2B2B2B;
+}
+.location{
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+
+  color: rgba(43, 43, 43, 0.499918);
+}
+.messageTitle{
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+
+  color: #303030;
+
+}
+.textArea{
+  width: 100%;
+  background: #F9FAFB;
+  border: 1px solid #DEDEE0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  padding: 19px 22px;
+  color: #000;
+  resize: none;
+  margin-bottom: 24px;
+  max-height: 183px;
+  ::placeholder{
+    color: rgba(102, 102, 102, 0.466455);
+  }
+
+}

@@ -1,4 +1,44 @@
 .container{
+  background: linear-gradient(180deg, #090810 0%, #171236 100%);
+  //display: flex;
+  //flex-direction: column;
+}
+.row1{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 77px;
+  padding-left: 144px;
+  padding-right: 144px;
+}
+.row2{
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 960px) {
+  .row1{
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+@media (max-width: 720px) {
+  .row1{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .row2{
+    height: initial;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 540px) {
+  .row2{
+    flex-direction: column;
+
+  }
+
 }

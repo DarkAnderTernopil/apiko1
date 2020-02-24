@@ -1,0 +1,22 @@
+.container{
+  background: #F9FAFB;
+  border: 1px solid #DEDEE0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.title{
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+
+  color: #303030;
+}

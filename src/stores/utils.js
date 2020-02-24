@@ -8,6 +8,7 @@ import {
   resolveIdentifier,
   types as t,
 } from 'mobx-state-tree';
+import { normalize } from 'normalizr';
 
 export function asyncModel(thunk, auto = true) {
   const model = t
@@ -26,6 +27,11 @@ export function asyncModel(thunk, auto = true) {
           return store._auto(promise);
         }
         return promise;
+      },
+      merge(data, schema) {
+        const { entities, result } = normalize(data, schema);
+        getRoot(store).entities.merge(entities);
+        return result;
       },
       async _auto(promise) {
         try {
@@ -92,6 +98,9 @@ export function createCollection(ofModel, asyncModels = {}) {
     .actions((store) => ({
       add(key, value) {
         store.collection.set(String(key), value);
+      },
+      has(key, value) {
+        store.collection.has(String(key), value);
       },
     }));
   return t.optional(collection, {});

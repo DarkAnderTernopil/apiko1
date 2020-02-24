@@ -1,0 +1,62 @@
+.message{
+  position: relative;
+  max-width: 266px;
+  padding-left: 10px;
+}
+.container{
+  background: #349A89;
+  padding: 6px 11px;
+  border-radius: 5px;
+  position: relative;
+
+
+}
+.text{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.6px;
+  line-height: 26px;
+  /* identical to box height, or 169% */
+
+
+  color: #FFFFFF;
+}
+.time{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 26px;
+  /* identical to box height, or 203% */
+
+  text-align: right;
+
+  color: #97A3B4;
+}
+.triangle{
+  border-left: 10px solid transparent;
+  border-right: 10px solid #349A89;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #349A89;
+  position: absolute;
+  top: 6.5px;
+  left: -10px;
+}
+.messageViewer{
+  margin-left: auto;
+  .container{
+    background: #FFFFFF;
+  }
+  .text{
+    color: #131314;
+  }
+  .triangle{
+    top: 6.5px;
+    right: -10px;
+    transform: rotateY(180deg);
+    border-right: 10px solid #FFFFFF;
+    border-top: 10px solid #FFFFFF;
+    left: initial;
+  }
+}

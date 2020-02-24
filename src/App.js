@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import Modal from 'react-modal';
 import { createStore, Provider } from './stores/createStore';
 import Router from './scenes/routes';
 
 const store = createStore();
+store.bootstrap();
 function App() {
   // const [isLoading, setLoading] = useState(true);
-  useEffect(() => {
-    store.bootstrap().then(() => {
-      // setLoading(false);
-    });
-  }, []);
+  // useEffect(() => {
+  //
+  // }, []);
   // if (isLoading) {
   //   return <div>Loading...</div>;
   // }
@@ -21,5 +21,5 @@ function App() {
     </main>
   );
 }
-
+Modal.setAppElement('#modalRoot');
 export default App;

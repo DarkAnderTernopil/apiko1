@@ -1,21 +1,64 @@
 .container{
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
   color: #303030;
+  position: relative;
   input{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+
+    color: #000000;
     display: block;
     padding: 20px 12px;
     background: #F9FAFB;
     border: 1px solid #DEDEE0;
     box-sizing: border-box;
     border-radius: 5px;
+    width: 100%;
+    ::placeholder{
+      color: rgba(102, 102, 102, 0.466455);
+    }
+
+
+
+  }
+  textarea{
+    background: #F9FAFB;
+    border: 1px solid #DEDEE0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 183px;
+    width: 100%;
+    resize: none;
+    padding: 19px 22px;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.4px;
-    color: rgba(102, 102, 102, 0.466455);
+    ::placeholder{
+      color: rgba(102, 102, 102, 0.466455);
+    }
+
   }
+
+}
+.inputContainer{
+  position: relative;
+}
+.iconRight{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+}
+.error{
+  color: #FF0000;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 5px;
 }
